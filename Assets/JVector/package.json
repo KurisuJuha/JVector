@@ -1,8 +1,12 @@
 {
     "name": "jp.juhakurisu.jvector",
-    "displayName": "JVector",
     "version": "0.0.0",
-    "unity": "2021.1",
-    "description": "double精度のVectorクラスです。",
-    "dependencies": { }
+    "displayName": "JVector",
+    "description": "Double精度のvectorクラスです。",
+    "unity": "2021.3",
+    "unityRelease": "1f1",
+  
+    "author": {
+      "name": "JuhaKurisu"
+    }
 }
