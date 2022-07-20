@@ -82,7 +82,21 @@ namespace JuhaKurisu.JVector
             }
         }
 
-        
+        public static JVector3 forward
+        {
+            get
+            {
+                return new JVector3(0, 0, 1);
+            }
+        }
+
+        public static JVector3 left
+        {
+            get
+            {
+                return new JVector3(-1, 0, 0);
+            }
+        }
 
         #endregion
     }
