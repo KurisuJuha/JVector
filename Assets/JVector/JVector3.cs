@@ -122,6 +122,14 @@ namespace JuhaKurisu.JVector
             }
         }
 
+        public static JVector3 zero
+        {
+            get
+            {
+                return new JVector3(0, 0, 0);
+            }
+        }
+
         #endregion
     }
 }
