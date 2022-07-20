@@ -146,6 +146,41 @@ namespace JuhaKurisu.JVector
             }
         }
 
+        public JVector3 normalized
+        {
+            get
+            {
+
+            }
+        }
+
+        #endregion
+
+        #region ÉÅÉ\ÉbÉh
+
+        public static float Angle(JVector3 from, JVector3 to)
+        {
+            double cos = Dot(from.normalized, to.normalized);
+            if (cos < -1) cos = -1;
+            if (cos > 1) cos = 1;
+
+            return (float)(Math.Acos(cos) * (180 / Math.PI));
+        }
+
+        public static double Dot(JVector3 lhs, JVector3 rhs)
+        {
+            return lhs.x * rhs.x + lhs.y * rhs.y + lhs.z * rhs.z;
+        }
+
+        public static float AngleBetween(JVector3 from, JVector3 to)
+        {
+            double cos = Dot(from.normalized, to.normalized);
+            if (cos < -1) cos = -1;
+            if (cos > 1) cos = 1;
+            return (float)Math.Acos(cos);
+
+        }
+
         #endregion
     }
 }
