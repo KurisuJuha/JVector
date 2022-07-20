@@ -130,6 +130,22 @@ namespace JuhaKurisu.JVector
             }
         }
 
+        public double sqrMagnitude
+        {
+            get
+            {
+                return x * x + y * y + z * z;
+            }
+        }
+
+        public double magnitude
+        {
+            get
+            {
+                return Math.Sqrt(sqrMagnitude);
+            }
+        }
+
         #endregion
     }
 }
