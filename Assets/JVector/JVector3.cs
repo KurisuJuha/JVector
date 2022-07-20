@@ -178,7 +178,12 @@ namespace JuhaKurisu.JVector
             if (cos < -1) cos = -1;
             if (cos > 1) cos = 1;
             return (float)Math.Acos(cos);
+        }
 
+        public static JVector3 ClampMagnitude(JVector3 vector, double maxLength)
+        {
+            if (vector.sqrMagnitude > maxLength * maxLength) return vector.normalized * maxLength;
+            else return vector;
         }
 
         #endregion
