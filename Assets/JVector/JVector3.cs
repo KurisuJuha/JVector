@@ -186,6 +186,20 @@ namespace JuhaKurisu.JVector
             else return vector;
         }
 
+        public static JVector3 Cross(JVector3 lhs, JVector3 rhs)
+        {
+            double x = lhs.y * rhs.z - rhs.y * lhs.z;
+            double y = lhs.z * rhs.x - rhs.z * lhs.x;
+            double z = lhs.x * rhs.y - rhs.x * lhs.y;
+
+            return new JVector3(x, y, z);
+        }
+
+        public static double Distance(JVector3 a, JVector3 b)
+        {
+            return Math.Sqrt((a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y) + (a.z - b.z) * (a.z - b.z));
+        }
+
         #endregion
     }
 }
