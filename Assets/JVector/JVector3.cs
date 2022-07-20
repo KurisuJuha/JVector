@@ -66,6 +66,14 @@ namespace JuhaKurisu.JVector
             }
         }
 
+        public static JVector3 back
+        {
+            get
+            {
+                return new JVector3(0, 0, -1);
+            }
+        }
+
         #endregion
     }
 }
